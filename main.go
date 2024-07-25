@@ -40,7 +40,7 @@ type WithdrawResponse struct {
 			Account string  `json:"account"`
 			Target  string  `json:"target"`
 			Points  int     `json:"points"`
-			Money   float64 `json:"money"` // 修改为浮点数类型
+			Money   float64 `json:"money"`
 			Status  string  `json:"status"`
 		} `json:"Records"`
 	} `json:"data"`
@@ -193,6 +193,6 @@ func main() {
 	// 其它
 	fmt.Println("Powered by xingkongqwq")
 
-	// 脚本运行完10秒后关闭
+	// 脚本运行完10秒后自动关闭
 	time.Sleep(10 * time.Second)
 }
